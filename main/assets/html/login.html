@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<meta name="author" content="NepKoder - Sujan Shrestha">
+	<meta name="description" content="online campus management information system java web application">
+	<meta name="keywords" content="web development, java application, jsp, servlet, bootstrap, HTML5, CSS, JS">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="">
+
+	<!--    google font add here -->
+
+	<!--    bootstrap css file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--   font awesome css file -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!--   other related css file add here -->
+
+
+	<!--   my custom css styling file -->
+	<link rel="stylesheet" href="css/custom-style.css">
+
+	<script type="text/javascript">
+
+	</script>
+
+</head>
+
+<body>
+	<div class="jumbotron">
+		<form action="#">
+			<h1>System Login</h1>
+			<div class="login-area">
+				<p>Please provide your details</p>
+                <button style="font-size:25px" onclick="barcodeScanner.openScanner()" >AA</button>
+
+				<!-- username field -->
+				<div class="field">
+
+					<label for="username">Username</label>
+					<input type="text" id="username" value="" placeholder="Username" class="form-control username-field">
+				</div>
+
+				<!--  password field -->
+				<div class="field">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" value="" placeholder="Password" class="form-control password-field">
+				</div>
+
+			</div>
+
+			<!-- end of content of login section here -->
+			<div class="form-actions">
+				<p class="reset-option"><a href="#">Forget your password ??</a></p>
+				<a class="btn btn-primary btn-login" id="login" onclick="login.performClick();" >Login</a>
+			</div>
+		</form>
+	</div>
+	<div class="below-login">
+		<p>Don't have account?<a href="register.html">Register </a></p>
+		<button type="button" class="btn btn-success text-center" id="activity" onclick="activity.gotoAnother();">Goto Another Activity</button>
+	</div>
+
+	<div id="conf">
+		<h3>printer configuration</h3>
+		<input type="text" id="printer_ip" placeholder="Enter printer IP">
+		<select id="printertype">
+			<option id="ethernet">Ethernet</option>
+			<option id="bluetooth">Bluetooth</option>
+		</select>
+	</div>
+
+	<button type="button" onclick="testPrinter()">Test Printer</button>
+
+	<!--<input type="button" value="here the value from android " onclick="showValue('function parameter here')" />-->
+
+	<div style="background-color:red">
+    <p id="test"></p>
+    </div>
+
+	<script>
+	function testPrinter() {
+
+		var ip = document.getElementById("printer_ip").value;
+			printer.testprinter(ip);
+	}
+
+		 <!-- Getting value from Android -->
+        function showBarcodeValue() {
+            var myBarcode = barcodeResult.barcodeValue();
+            document.getElementById("username").value = myBarcode;
+        }
+	</script>
+
+
+	<!-- jquery file here -->
+
+	<!-- bootstrap js file -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- my custome js file -->
+	<script src="js/custom-script.js"></script>
+
+</body>
+
+</html>

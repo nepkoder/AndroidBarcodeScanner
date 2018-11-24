@@ -1,0 +1,161 @@
+body {
+	background: url(../img/body-bg.png);
+	/*	font: 13px 'Open Sans';*/
+}
+
+.jumbotron {
+	width: 380px;
+	background: #f9f9f9;
+	display: block;
+	margin: 100px auto 0px auto;
+	/*	clockwise margin setup */
+	/*	border-bottom: 4px solid purple;*/
+	border-radius: 4px;
+	padding-top: 18px;
+	padding-left: 25px;
+	padding-right: 29px;
+	padding-bottom: 60px;
+	/*		box-shadow: 0px 0px 2px red; */
+	box-shadow: 0px 0px 3px #dadada;
+	border: 2px solid #dadada;
+}
+
+.jumbotron h1 {
+	font-size: 36px;
+	text-align: center;
+	color: #525252;
+}
+
+.login-area p {
+	text-align: center;
+	font-size: 15px;
+	margin-top: -5px;
+	text-decoration: underline;
+
+}
+
+.field {
+	margin-bottom: 1.25em;
+	width: 100%;
+	/*	height: 68px;*/
+}
+.login-area label {
+	display: none;
+}
+
+.field input {
+	font-family: 'Open Sans';
+	/*	height: 45px;*/
+	/*	font-size: 16px;*/
+	/*		width: 255px; */
+	display: block;
+	margin: 0;
+	padding-left: 45px;
+	color: #333;
+	border: 1px solid #dadada;
+	border-radius: 0;
+	/*	box-shadow: none;*/
+}
+
+.field input:active,
+.field input:visited,
+.field input:focus,
+.field input:visited {
+	box-shadow: none;
+}
+
+
+.username-field {
+	background: url(../img/user.png);
+	background-repeat: no-repeat;
+}
+
+
+.password-field {
+	background: url(../img/password.png);
+	background-repeat: no-repeat;
+}
+
+.form-actions {
+	width: 100%;
+	/*		border: 2px dotted;*/
+	float: left;
+}
+
+.form-actions .reset-option {
+	font-size: 14px;
+	position: absolute;
+	/*	border: 5px solid;*/
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.btn-login {
+	float: right;
+	background: transparent;
+	color: black;
+	font-weight: 500;
+	margin-right: 15px;
+	box-shadow: none;
+	border-radius: 0%;
+}
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:visited {
+	box-shadow: none;
+	border-radius: 0%;
+}
+
+/* below login section */
+
+.below-login {
+	/*	width: 300px;*/
+	/*	margin: 1.5em auto;*/
+	color: black;
+	text-align: center;
+	margin-top: 7px;
+	/*	line-height: 20px;*/
+	font-size: 15px;
+}
+
+.below-login a {
+	color: green;
+	padding-left: 8px;
+
+}
+
+/* register section css */
+
+.form-group input {
+	border: 1px solid #dadada;
+}
+
+.form-actions-register {
+	width: 100%;
+	/*			border: 2px dotted;*/
+	float: left;
+	padding-top: 7px;
+}
+
+.form-actions-register .my-1 {
+	/*	font-size: 10px;*/
+	position: absolute;
+	line-height: inherit;
+	font-size: 14px;
+	/*		margin-top: 19px;*/
+	/*	border: 5px solid;*/
+	/*				padding-top: 10px;*/
+	/*	padding-left: 15px;*/
+}
+
+.my-1 label {
+	padding-top: 2px;
+}
+
+.btn-register {
+	float: right;
+	background: transparent;
+	color: black;
+	font-weight: 500;
+	/*	margin-right: 0px;*/
+}

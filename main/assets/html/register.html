@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Register</title>
+	<meta name="author" content="NepKoder - Sujan Shrestha">
+	<meta name="description" content="online campus management information system java web application">
+	<meta name="keywords" content="web development, java application, jsp, servlet, bootstrap, HTML5, CSS, JS">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="">
+
+	<!--    google font add here -->
+
+	<!--    bootstrap css file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--   font awesome css file -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!--   other related css file add here -->
+
+
+	<!--   my custom css styling file -->
+	<link rel="stylesheet" href="css/custom-style.css">
+
+</head>
+
+<body>
+	<div class="jumbotron">
+		<form action="#">
+			<h1>Register Account</h1>
+			<div class="login-area">
+				<p>Create your new account</p>
+
+				<!-- username field -->
+				<div class="form-group">
+					<label for="firstname">First Name:</label>
+					<input type="text" id="firstname" value="" placeholder="First Name" class="form-control">
+				</div>
+
+
+				<!-- username field -->
+				<div class="form-group">
+					<label for="lastname">Last Name:</label>
+					<input type="text" id="lastname" value="" placeholder="Last Name" class="form-control">
+				</div>
+
+				<!--				email field -->
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" value="" placeholder="Email Address" class="form-control">
+				</div>
+
+				<!--  password field -->
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input type="password" id="password" value="" placeholder="Password" class="form-control">
+				</div>
+				<!--				<small id="passwordHelpBlock" class="form-text text-muted">Your password must be 8-20 characters long.</small>-->
+				<!--				confirm password field -->
+				<div class="form-group">
+					<label for="confirm-password">Confirm Password:</label>
+					<input type="password" id="confirm-password" value="" placeholder="Confirm Password" class="form-control">
+				</div>
+
+			</div>
+
+			<!-- end of content of login section here -->
+			<div class="form-actions-register">
+				<div class="custom-control custom-checkbox my-1">
+					<input type="checkbox" class="custom-control-input" id="customControlInline">
+					<label class="custom-control-label" for="customControlInline">Agree with <a href="#">Terms &amp; Conditions.</a></label>
+				</div>
+				<a class="btn btn-primary btn-register" href="#">Register</a>
+			</div>
+		</form>
+	</div>
+	<div class="below-login">
+		<p>Already have account?<a href="login.html">Login</a></p>
+	</div>
+	<!-- jquery file here -->
+
+	<!-- bootstrap js file -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- my custome js file -->
+	<script src="js/custom-script.js"></script>
+
+</body>
+
+</html>
